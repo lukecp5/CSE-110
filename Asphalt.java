@@ -31,11 +31,11 @@ public class Asphalt {
         System.out.println("");
 
         // Computations/Processing expressions
-        cubicFeet = (miles * 5280.00) * ((double)lanes * 12.00) * (inches / 12.00);
+        cubicFeet = (miles * 5280.00) * (lanes * 12.00) * (inches / 12.00);
         totalWeight = (cubicFeet * ASPHALT_WEIGHT);
-        tons = (totalWeight / (double)2000);
-        truckloads = (int)Math.ceil(totalWeight / (double)10000.00); // Note: Output to console
-        totalCost = truckloads * 750.00; // Note: Output to console
+        tons = (totalWeight / 2000.00); 
+        truckloads = (int)Math.ceil(totalWeight / 10000.00); // Note: Output to console
+        totalCost = truckloads * 750.00; // Note: Calculate cost based off truckloads, not tons 
 
 
         // finalTotal = truckloads * 750.00;
@@ -44,6 +44,5 @@ public class Asphalt {
         // Display results
         System.out.printf("%-33s: %d\n", "Truckloads of asphalt needed is", truckloads);   
         System.out.printf("%-33s: $%.2f\n", "Total cost of asphalt is", totalCost);   
-
     }
 }
