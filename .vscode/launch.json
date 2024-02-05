@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Asphalt",
+            "request": "launch",
+            "mainClass": "Asphalt",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
+            "name": "Circle",
+            "request": "launch",
+            "mainClass": "Circle",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
+            "name": "Converter",
+            "request": "launch",
+            "mainClass": "Converter",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
+            "name": "HelloJava3",
+            "request": "launch",
+            "mainClass": "HelloJava3",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
+            "name": "HelloJava5",
+            "request": "launch",
+            "mainClass": "HelloJava5",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
+            "name": "PizzaParty",
+            "request": "launch",
+            "mainClass": "PizzaParty",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
+            "name": "PrintBunny",
+            "request": "launch",
+            "mainClass": "PrintBunny",
+            "projectName": "Programming---CSE110_db131c50"
+        }
+    ]
+}

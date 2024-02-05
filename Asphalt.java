@@ -5,40 +5,45 @@ public class Asphalt {
         // Instantiating the scanner
         Scanner in = new Scanner(System.in);
 
-
-
-        // Variable Declarations 
+        // Variable Declarations
         double ASPHALT_WEIGHT = 145;
         double ASPHALT_COST = 150;
         double TRUCK_CAPACITY = 10000; // 5 tons of asphalt
 
-        
         double miles = 0;
         int lanes = 0;
         int inches = 0;
 
-
         double cubicFeet = 0; // Note: (Miles * 5280) * (lanes * 12) * (12 / inches)
-        double weight = 0;
         double totalWeight = 0;
-        int truckloads = 0; // Note: Use Math.ceil() after totalWeight / TRUCK_CAPACITY
         double tons = 0; // Note: totalWeight / 2000;
-        double totalCost = 0; // Note: tons * ASPHALT_COST
+        int truckloads = 0; // Note: Use Math.ceil() after totalWeight / TRUCK_CAPACITY
+        double totalCost = 0; // Note: tons * ASPHALT_COST || ASPHALT_COST * (truckloads * 750)
+        double finalTotal = 0; // ASPHALT_COST * (truckloads * 750)
 
         // Below this comment: collect the required inputs
-        System.out.printf("%-33s: ","Enter length of road in miles");
+        System.out.printf("%-33s: ", "Enter length of road in miles");
         miles = in.nextDouble();
-        System.out.printf("%-33s: ","Enter number of lanes");
+        System.out.printf("%-33s: ", "Enter number of lanes");
         lanes = in.nextInt();
-        System.out.printf("%-33s: ","Enter depth of asphalt in inches");
+        System.out.printf("%-33s: ", "Enter depth of asphalt in inches");
         inches = in.nextInt();
-        
-        // Below this comment: write Java code to do the computations needed to
+        System.out.println("");
+
+        // Computations/Processing expressions
+        cubicFeet = (miles * 5280.00) * ((double)lanes * 12.00) * (inches / 12.00);
+        totalWeight = (cubicFeet * ASPHALT_WEIGHT);
+        tons = (totalWeight / (double)2000);
+        truckloads = (int)Math.ceil(totalWeight / (double)10000.00); // Note: Output to console
+        totalCost = truckloads * 750.00; // Note: Output to console
 
 
-        // determine the correct output
+        // finalTotal = truckloads * 750.00;
+        // System.out.printf("\n\nTotal Cost: %f\n\n\n", finalTotal);
 
-        // Below this comment: output the correct output
+        // Display results
+        System.out.printf("%-33s: %d\n", "Truckloads of asphalt needed is", truckloads);   
+        System.out.printf("%-33s: $%.2f\n", "Total cost of asphalt is", totalCost);   
 
     }
 }
