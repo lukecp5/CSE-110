@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AsphaltWi",
+            "request": "launch",
+            "mainClass": "AsphaltWi",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
+            "name": "AsphaltWithLog",
+            "request": "launch",
+            "mainClass": "AsphaltWithLog",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
