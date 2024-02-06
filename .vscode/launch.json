@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OutputNotation",
+            "request": "launch",
+            "mainClass": "OutputNotation",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
+            "name": "TempConversion2",
+            "request": "launch",
+            "mainClass": "TempConversion2",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
             "name": "TempConversion",
             "request": "launch",
             "mainClass": "TempConversion",
