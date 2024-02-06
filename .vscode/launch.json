@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TipCalculator",
+            "request": "launch",
+            "mainClass": "TipCalculator",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
             "name": "OutputNotation",
             "request": "launch",
             "mainClass": "OutputNotation",
