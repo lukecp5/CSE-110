@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TempConversion",
+            "request": "launch",
+            "mainClass": "TempConversion",
+            "projectName": "Programming---CSE110_db131c50"
+        },
+        {
+            "type": "java",
             "name": "AsphaltWi",
             "request": "launch",
             "mainClass": "AsphaltWi",
